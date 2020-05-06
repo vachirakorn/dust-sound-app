@@ -183,7 +183,7 @@ if(randomDustMin > 0 && randomDustMax > 0 && randomDustMin < randomDustMax){
         var dV = Vo - Voc;
         if ( dV < 0 ) {
             dV = 0;
-            Voc = Vo;
+            // Voc = Vo;
         }
         var latestDensity = dV / K * 100;
         updateChartData(latestDensity, hitPerSec);
