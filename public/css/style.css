@@ -1,0 +1,91 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'dustfineregular';
+    src: url('/font/dustfine/dustfine-webfont.woff2') format('woff2'),
+         url('/font/dustfine/dustfine-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'squarefontregular';
+    src: url('/font/squarefont/square-webfont.woff2') format('woff2'),
+         url('/font/squarefont/square-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'squarefont_outlineregular';
+    src: url('/font/squarefont/squareo-webfont.woff2') format('woff2'),
+         url('/font/squarefont/squareo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.controller {
+    display: block;
+    position: fixed;
+    top:0;
+    right:0;
+    margin: 5px 5px 5px 5px;
+    width: 180px;
+}
+
+
+button#sound {
+    display: block;
+    margin: 5px 5px 5px 5px;
+    text-align: right;
+    float: right;
+}
+
+.right-meter {
+    margin: 5px 5px 0px 5px;
+}
+.right-meter:last-child {
+    margin: 5px 5px 5px 5px;
+}
+
+div #collisionMeter, #dustMeter {
+    display: block;
+    font-family: 'squarefontregular';
+    font-size: 1.2em;
+    display: block;
+    color: white;
+    text-align: right;
+    transition: all 2s;
+}
+
+div#collisionMeter.healthy, #dustMeter.healthy {
+    color: rgb(0, 165, 88);
+    
+}
+div#collisionMeter.moderate, #dustMeter.moderate{
+    color: yellow;
+} 
+
+div#collisionMeter.unhealthy, #dustMeter.unhealthy{
+    color: #ca1d1d;
+} 
+canvas#particlesField {
+    background-color: rgb(4, 18, 47);
+}
+
+
+container#dustChart {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
